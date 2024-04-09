@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+body {
+  margin: 5vw 10vw 0px 10vw;
+  background-color: #e7e8c1;
+  color: #757553;
+  font-family: 'Inconsolata';
+  font-size: 2rem;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+h3 {
+  text-align: center;
+  font-weight: bolder;
+  font-family: 'Reddit Mono';
+  text-decoration: underline;
+}
+
+h4 {
+  margin: 0;
+}
+
+#contentGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-column-gap: 1vmin;
+  grid-row-gap: 1vmin;
+  background-color: rgba(37, 30, 4, 0.39);
+  padding: 2vmin;
+  font-size: 1.4rem;
+}
+
+.contentItem {
+  display: flex;
+  flex-direction: column;
+  padding: 1vmin;
+  color: #eee;
+  box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.62);
+  border: 2px solid #eee;
+  border-radius: 0.25vmin;
+  height: 100%;
+  transition: all 1s ease;
+}
+
+.contentItem:hover{
+  transform: scale(1.1);
+}
+
+.footerImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0.25vmin;
+  margin-top: 20px;
+}
