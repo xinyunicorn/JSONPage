@@ -12,7 +12,7 @@ let jsonDatabase  = [
   },
   {
     "song" : "Enchanted",
-    "picture" : "https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Taylor_Swift_-_Speak_Now_%28Taylor%27s_Version%29.png/220px-Taylor_Swift_-_Speak_Now_%28Taylor%27s_Version%29.png",
+    "picture" : "https://upload.wikimedia.org/wikipedia/en/5/5b/Taylor_Swift_-_Speak_Now_%28Taylor%27s_Version%29.png",
     "b_color" : "#905da1",
     "t_color" : "#350c5e",
     "bridge" : "This is me praying that / This was the very first page / Not where the storyline ends / My thoughts will echo your name / Until I see you again / These are the words I held back / As I was leaving too soon / I was enchanted to meet you"
@@ -103,3 +103,13 @@ function createElement(incomingJSON) {
   contentGridElement.appendChild(newContentElement);
 
 }
+
+// Parallax library
+var rellax = new Rellax('.rellax');
+
+// Glide carousel Library
+new Glide('.glide').mount();
+
+// Lazy loading large images...
+const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
